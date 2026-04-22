@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+/* Accessibility: Skip to content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary);
+    color: white;
+    padding: 8px;
+    z-index: 10000;
+    transition: top 0.3s;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Focus styles for keyboard navigation */
+*:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Remove default focus for mouse clicks but keep for keyboard */
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -568,6 +597,8 @@ section {
     height: auto;
     border-radius: 15px;
     box-shadow: var(--shadow-lg);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 /* STATS SECTION */
@@ -688,6 +719,7 @@ section {
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+    aspect-ratio: 4 / 5;
 }
 
 /* SERVICES SECTION */
@@ -735,14 +767,32 @@ section {
     box-shadow: var(--shadow-lg);
 }
 
+/* Prevent layout shift for images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Service images with fixed aspect ratio container */
 .service-image {
     width: 100%;
     height: 180px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.service-image::before {
+    content: "";
+    display: block;
+    padding-top: 45%;
 }
 
 .service-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -926,6 +976,14 @@ section {
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
     cursor: pointer;
+    aspect-ratio: 1 / 1;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
 }
 
 .gallery-item:hover {

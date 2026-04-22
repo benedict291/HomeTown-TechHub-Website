@@ -3,37 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - TechHub</title>
-    <link rel="icon" type="image/png" href="Img/favicon-hometown.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
+    <!-- Primary SEO Meta Tags -->
+    <title>Contact Us - HomeTown TechHub | Get in Touch with IT Solutions</title>
+    <meta name="description" content="Contact HomeTown TechHub for IT solutions, web development, and digital services. Reach out via email, phone, or send us a message. We respond quickly to all inquiries.">
+    <meta name="keywords" content="contact, get in touch, email, phone, IT solutions, web development, support, inquiry">
+    <meta name="author" content="HomeTown TechHub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hometowntechhub.com/contact.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hometowntechhub.com/contact.html">
+    <meta property="og:title" content="Contact Us - HomeTown TechHub | Get in Touch with IT Solutions">
+    <meta property="og:description" content="Contact HomeTown TechHub for IT solutions, web development, and digital services. Reach out via email, phone, or send us a message.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="HomeTown TechHub">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://hometowntechhub.com/contact.html">
+    <meta name="twitter:title" content="Contact Us - HomeTown TechHub">
+    <meta name="twitter:description" content="Contact HomeTown TechHub for IT solutions, web development, and digital services.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop">
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Img/favicon-hometown.png">
+    <link rel="apple-touch-icon" href="Img/favicon-hometown.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="seo.js" defer></script>
+    <script src="contact.js" defer></script>
 </head>
 <body>
 
+<!-- Skip to content link for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- NAVBAR -->
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
         <div class="nav-logo">
-            <img src="img/logo-hometown.jpeg" alt="logo">
+            <a href="index.html" aria-label="HomeTown TechHub Home Page">
+                <img src="img/logo-hometown.jpeg" alt="HomeTown TechHub - Hometown Tech Hub Logo" width="180" height="60">
+            </a>
         </div>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="courses.html">Data Analysis</a></li>
-                    <li><a href="courses.html">Web Development</a></li>
-                    <li><a href="courses.html">Product Design</a></li>
-                    <li><a href="courses.html">SEO Optimization</a></li>
-                    <li><a href="courses.html">Social Media Marketing</a></li>
-                    <li><a href="courses.html">Content Writing</a></li>
+        <ul class="nav-menu" role="menubar">
+            <li class="nav-item" role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+            <li class="nav-item" role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+            <li class="nav-item dropdown" role="none">
+                <a href="#" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Courses <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a href="courses.html" role="menuitem">Data Analysis</a></li>
+                    <li role="none"><a href="courses.html" role="menuitem">Web Development</a></li>
+                    <li role="none"><a href="courses.html" role="menuitem">Product Design</a></li>
+                    <li role="none"><a href="courses.html" role="menuitem">SEO Optimization</a></li>
+                    <li role="none"><a href="courses.html" role="menuitem">Social Media Marketing</a></li>
+                    <li role="none"><a href="courses.html" role="menuitem">Content Writing</a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item" role="none"><a href="contact.html" class="nav-link" role="menuitem" aria-current="page">Contact</a></li>
         </ul>
-        <div class="hamburger">
+        <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -42,20 +82,20 @@
 </nav>
 
 <!-- CONTACT PAGE -->
-<section class="contact-page">
+<section class="contact-page" id="main-content" aria-labelledby="contact-heading">
     <div class="container">
         <div class="page-header" style="background: linear-gradient(rgba(26, 26, 46, 0.3), rgba(26, 26, 46, 0.3)), url('img/LogoBg-hometown.jpeg'); background-size: cover; background-position: center; border-radius: 20px; padding: 60px 20px; text-align: center;">
-            <h1 style="color: #fff;">Get In Touch</h1>
+            <h1 id="contact-heading">Get In Touch</h1>
             <p style="color: rgba(255, 255, 255, 0.9);">Have a question or want to work together? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
         </div>
 
         <div class="contact-wrapper">
-            <div class="contact-info-section">
-                <h2>Contact Information</h2>
+            <div class="contact-info-section" aria-labelledby="contact-info-heading">
+                <h2 id="contact-info-heading">Contact Information</h2>
                 <p>We're here to help and answer any questions you might have. We look forward to hearing from you.</p>
 
                 <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <div class="info-content">
                         <h4>Our Location</h4>
                         <p>123 Tech Street, Silicon Valley, CA 94025</p>
@@ -63,44 +103,44 @@
                 </div>
 
                 <div class="info-item">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
                     <div class="info-content">
                         <h4>Email Us</h4>
-                        <p>info@techhub.com</p>
+                        <p><a href="mailto:info@hometowntechhub.com">info@hometowntechhub.com</a></p>
                     </div>
                 </div>
 
                 <div class="info-item">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-phone" aria-hidden="true"></i>
                     <div class="info-content">
                         <h4>Call Us</h4>
-                        <p>+1 (234) 567-890</p>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
                     </div>
                 </div>
 
                 <div class="info-item">
-                    <i class="fas fa-clock"></i>
+                    <i class="fas fa-clock" aria-hidden="true"></i>
                     <div class="info-content">
                         <h4>Working Hours</h4>
                         <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
                     </div>
                 </div>
 
-                <div class="social-section">
-                    <h3>Follow Us</h3>
+                <div class="social-section" aria-labelledby="social-heading">
+                    <h3 id="social-heading">Follow Us</h3>
                     <div class="contact-social">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="contact-form-section">
-                <h2>Send Us a Message</h2>
+            <div class="contact-form-section" aria-labelledby="form-heading">
+                <h2 id="form-heading">Send Us a Message</h2>
                 <div class="form-status" id="formStatus"></div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" aria-label="Contact form">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name</label>
@@ -134,7 +174,7 @@
                     </div>
                     <button type="submit" class="submit-btn">
                         Send Message
-                        <i class="fas fa-paper-plane"></i>
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
                     </button>
                 </form>
             </div>
@@ -147,14 +187,14 @@
         <div class="footer-content">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <i class="fas fa-cube"></i>
-                    <span>TechHub</span>
+                    <i class="fas fa-cube" aria-hidden="true"></i>
+                    <span>HomeTown TechHub</span>
                 </div>
                 <p>We are a leading IT solutions provider with 5+ years of experience in delivering innovative technologies and exceptional services to businesses worldwide.</p>
                 <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -169,33 +209,33 @@
             <div class="footer-col">
                 <h4>Get In Touch</h4>
                 <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <p>123 Tech Street, Silicon Valley, CA 94025</p>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p><a href="mailto:info@techhub.com">info@techhub.com</a></p>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <p><a href="mailto:info@hometowntechhub.com">info@hometowntechhub.com</a></p>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-phone" aria-hidden="true"></i>
                     <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 TechHub. All rights reserved.</p>
+            <p>&copy; 2026 HomeTown TechHub. All rights reserved.</p>
         </div>
     </div>
 </footer>
 
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/2348045678945" target="_blank" class="whatsapp-floating" title="Message us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/2348045678945" target="_blank" rel="noopener noreferrer" class="whatsapp-floating" aria-label="Message us on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
 </a>
 
-<script src="js/script.js"></script>
-<script src="js/contact.js"></script>
+<script src="script.js"></script>
+<script src="contact.js"></script>
 
 </body>
 </html>

@@ -3,38 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechHub - IT Solutions</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>HomeTown TechHub - IT Solutions & Digital Services | Home</title>
+    <meta name="description" content="HomeTown TechHub provides innovative IT solutions, web development, data analytics, SEO optimization, product design, and social media marketing. 5+ years experience delivering cutting-edge technology solutions for businesses worldwide.">
+    <meta name="keywords" content="IT solutions, web development, data analytics, SEO optimization, product design, social media marketing, content writing, digital solutions, technology services">
+    <meta name="author" content="HomeTown TechHub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://techhub.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techhub.com/">
+    <meta property="og:title" content="HomeTown TechHub - IT Solutions & Digital Services">
+    <meta property="og:description" content="Transform your business with our cutting-edge IT solutions. 5+ years experience in web development, data analytics, SEO, and digital marketing.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="HomeTown TechHub">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://techhub.com/">
+    <meta name="twitter:title" content="HomeTown TechHub - IT Solutions & Digital Services">
+    <meta name="twitter:description" content="Transform your business with our cutting-edge IT solutions. 5+ years experience in web development, data analytics, SEO, and digital marketing.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop">
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://www.youtube.com">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="Img/favicon-hometown.png">
+    <link rel="apple-touch-icon" href="Img/favicon-hometown.png">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- JavaScript -->
+    <script src="seo.js" defer></script>
 </head>
 <body>
 
+<!-- Skip to content link for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- NAVBAR -->
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
         <div class="nav-logo">
-            <img src="Img/Logo-hometown.jpeg" alt="logo">
-            <!-- <i class="fas fa-cube"></i> -->
-            <!-- <span>HomeTown Tech Hub</span> -->
+            <a href="index.html" aria-label="HomeTown TechHub Home Page">
+                <img src="Img/Logo-hometown.jpeg" alt="TechHub - Hometown Tech Hub Logo" width="180" height="60">
+            </a>
         </div>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item dropdown">
-                <a href="#courses" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="courses.html">Data Analysis</a></li>
-                    <li><a href="courses.html">Web Development</a></li>
-                    <li><a href="courses.html">Product Design</a></li>
-                    <li><a href="courses.html">SEO Optimization</a></li>
-                    <li><a href="courses.html">Social Media Marketing</a></li>
-                    <li><a href="courses.html">Content Writing</a></li>
+        <ul class="nav-menu" role="menubar">
+            <li class="nav-item" role="none"><a href="#main-content" class="nav-link" role="menuitem">Home</a></li>
+            <li class="nav-item" role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+            <li class="nav-item dropdown" role="none">
+                <a href="#courses" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Courses <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a href="courses.html#data-analytics" role="menuitem">Data Analysis</a></li>
+                    <li role="none"><a href="courses.html#web-development" role="menuitem">Web Development</a></li>
+                    <li role="none"><a href="courses.html#product-design" role="menuitem">Product Design</a></li>
+                    <li role="none"><a href="courses.html#seo" role="menuitem">SEO Optimization</a></li>
+                    <li role="none"><a href="courses.html#social-media" role="menuitem">Social Media Marketing</a></li>
+                    <li role="none"><a href="courses.html#content-writing" role="menuitem">Content Writing</a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item" role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
         </ul>
-        <div class="hamburger">
+        <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -43,9 +83,9 @@
 </nav>
 
 <!-- HERO SLIDER -->
-<section class="hero-slider" id="home">
+<section class="hero-slider" id="main-content" aria-labelledby="hero-title">
     <div class="slider-container">
-        <div class="slider-item active" style="background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.7)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=1080&fit=crop'); background-size: cover; background-position: center;">
+        <div class="slider-item active" style="background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.7)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=1080&fit=crop'); background-size: cover; background-position: center;" aria-hidden="true">
             <div class="slider-content">
                 <p class="slider-subtitle">creative & innovative</p>
                 <h1 class="slider-title">creative & innovative<br>Digital solution</h1>
@@ -57,7 +97,7 @@
             </div>
         </div>
 
-        <div class="slider-item" style="background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.7)), url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1920&h=1080&fit=crop'); background-size: cover; background-position: center;">
+        <div class="slider-item" style="background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.7)), url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1920&h=1080&fit=crop'); background-size: cover; background-position: center;" aria-hidden="true">
             <div class="slider-content">
                 <p class="slider-subtitle">creative & innovative</p>
                 <h1 class="slider-title">creative & innovative<br>Digital solution</h1>
@@ -85,31 +125,31 @@
         <h3 class="section-title">We Are Here to Grow Business Exponentially</h3>
         <div class="why-grid">
             <div class="why-card">
-                <div class="why-icon">
+                <div class="why-icon" aria-hidden="true">
                     <i class="fas fa-star"></i>
                 </div>
                 <h3>Best in Industry</h3>
                 <p>We provide top-notch IT solutions with the latest technology and best practices to ensure your business stays ahead of the competition.</p>
             </div>
             <div class="why-image">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=500&fit=crop" alt="Why Choose Us">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=500&fit=crop" alt="Professional team collaborating in modern office environment" loading="lazy" width="400" height="500">
             </div>
             <div class="why-card">
-                <div class="why-icon">
+                <div class="why-icon" aria-hidden="true">
                     <i class="fas fa-rocket"></i>
                 </div>
                 <h3>Innovation First</h3>
                 <p>Our team continuously explores new technologies and methodologies to deliver innovative solutions that drive growth and efficiency.</p>
             </div>
             <div class="why-card">
-                <div class="why-icon">
+                <div class="why-icon" aria-hidden="true">
                     <i class="fas fa-shield-alt"></i>
                 </div>
                 <h3>Reliable Support</h3>
                 <p>With 24/7 dedicated support, we ensure your systems run smoothly and any issues are resolved promptly.</p>
             </div>
             <div class="why-card">
-                <div class="why-icon">
+                <div class="why-icon" aria-hidden="true">
                     <i class="fas fa-dollar-sign"></i>
                 </div>
                 <h3>Cost Effective</h3>
@@ -153,7 +193,7 @@
                 </div>
             </div>
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&h=500&fit=crop" alt="About Us">
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&h=500&fit=crop" alt="HomeTown TechHub team of IT professionals working together in office" loading="lazy" width="500" height="500">
             </div>
         </div>
     </div>
@@ -203,81 +243,81 @@
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Data Analytics">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Data analytics dashboard showing business metrics and KPIs" loading="lazy" width="400" height="250">
                 </div>
                 <div class="service-header">
-                    <div class="service-icon">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-chart-bar"></i>
                     </div>
                     <h3>Data Analytics</h3>
                 </div>
                 <p>Transform raw data into actionable insights with our advanced analytics solutions. We help you make informed decisions based on comprehensive data analysis and reporting.</p>
-                <button class="service-btn"><i class="fas fa-arrow-right"></i></button>
+                <button class="service-btn" aria-label="Learn more about Data Analytics"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
             </div>
             <div class="service-card">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=250&fit=crop" alt="Web Development">
+                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=250&fit=crop" alt="Web developers coding on laptops in modern workspace" loading="lazy" width="400" height="250">
                 </div>
                 <div class="service-header">
-                    <div class="service-icon">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>Web Development</h3>
                 </div>
                 <p>Build powerful web applications with modern frameworks and technologies. Our expert developers create responsive, scalable solutions tailored to your business needs.</p>
-                <button class="service-btn"><i class="fas fa-arrow-right"></i></button>
+                <button class="service-btn" aria-label="Learn more about Web Development"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
             </div>
             <div class="service-card">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=400&h=250&fit=crop" alt="SEO Optimization">
+                    <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=400&h=250&fit=crop" alt="SEO optimization strategy visualization with search engine rankings" loading="lazy" width="400" height="250">
                 </div>
                 <div class="service-header">
-                    <div class="service-icon">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-search"></i>
                     </div>
                     <h3>SEO Optimization</h3>
                 </div>
                 <p>Improve your online visibility and drive organic traffic with our SEO optimization strategies. We implement proven techniques to boost your search engine rankings.</p>
-                <button class="service-btn"><i class="fas fa-arrow-right"></i></button>
+                <button class="service-btn" aria-label="Learn more about SEO Optimization"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
             </div>
             <div class="service-card">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop" alt="Product Design">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop" alt="Product designer creating user interface mockups on tablet" loading="lazy" width="400" height="250">
                 </div>
                 <div class="service-header">
-                    <div class="service-icon">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-pen-fancy"></i>
                     </div>
                     <h3>Product Design</h3>
                 </div>
                 <p>Create beautiful and intuitive product interfaces with our UX/UI design expertise. We focus on user experience and modern design principles for optimal results.</p>
-                <button class="service-btn"><i class="fas fa-arrow-right"></i></button>
+                <button class="service-btn" aria-label="Learn more about Product Design"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
             </div>
             <div class="service-card">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=250&fit=crop" alt="Social Media Marketing">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=250&fit=crop" alt="Social media marketing campaign analytics on smartphone" loading="lazy" width="400" height="250">
                 </div>
                 <div class="service-header">
-                    <div class="service-icon">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-share-alt"></i>
                     </div>
                     <h3>Social Media Marketing</h3>
                 </div>
                 <p>Amplify your brand presence across social platforms with strategic marketing campaigns. We create engaging content that resonates with your target audience.</p>
-                <button class="service-btn"><i class="fas fa-arrow-right"></i></button>
+                <button class="service-btn" aria-label="Learn more about Social Media Marketing"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
             </div>
             <div class="service-card">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=250&fit=crop" alt="Content Writing">
+                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=250&fit=crop" alt="Professional content writer crafting SEO-friendly articles" loading="lazy" width="400" height="250">
                 </div>
                 <div class="service-header">
-                    <div class="service-icon">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-pen"></i>
                     </div>
                     <h3>Content Writing</h3>
                 </div>
                 <p>Engage your audience with compelling and SEO-optimized content. Our skilled writers craft narratives that tell your brand story effectively.</p>
-                <button class="service-btn"><i class="fas fa-arrow-right"></i></button>
+                <button class="service-btn" aria-label="Learn more about Content Writing"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
             </div>
         </div>
     </div>
@@ -338,28 +378,28 @@
         <h3 class="section-title">Showcase Our Latest Projects & Works</h3>
         <div class="gallery-slider">
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=300&fit=crop" alt="Gallery 1">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=300&fit=crop" alt="HomeTown TechHub project: Business analytics dashboard implementation" loading="lazy" width="300" height="300">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=300&h=300&fit=crop" alt="Gallery 2">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=300&h=300&fit=crop" alt="HomeTown TechHub project: Team collaboration in software development" loading="lazy" width="300" height="300">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?w=300&h=300&fit=crop" alt="Gallery 3">
+                <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?w=300&h=300&fit=crop" alt="HomeTown TechHub project: Mobile app interface design" loading="lazy" width="300" height="300">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=300&fit=crop" alt="Gallery 4">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=300&fit=crop" alt="HomeTown TechHub project: Digital marketing campaign results" loading="lazy" width="300" height="300">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=300&fit=crop" alt="Gallery 5">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=300&fit=crop" alt="HomeTown TechHub project: Team meeting and strategy session" loading="lazy" width="300" height="300">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=300&h=300&fit=crop" alt="Gallery 6">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=300&h=300&fit=crop" alt="HomeTown TechHub project: Cloud infrastructure and server management" loading="lazy" width="300" height="300">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=300&h=300&fit=crop" alt="Gallery 7">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=300&h=300&fit=crop" alt="HomeTown TechHub project: Data visualization and reporting system" loading="lazy" width="300" height="300">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=300&fit=crop" alt="Gallery 8">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=300&fit=crop" alt="HomeTown TechHub project: E-commerce website development" loading="lazy" width="300" height="300">
             </div>
         </div>
         <div class="gallery-nav">
@@ -385,13 +425,13 @@
             <div class="footer-col">
                 <div class="footer-logo">
                     <i class="fas fa-cube"></i>
-                    <span>TechHub</span>
+                    <span>HomeTown TechHub</span>
                 </div>
                 <p>We are a leading IT solutions provider with 5+ years of experience in delivering innovative technologies and exceptional services to businesses worldwide.</p>
                 <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -420,7 +460,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 TechHub. All rights reserved.</p>
+            <p>&copy; 2026 HomeTown TechHub. All rights reserved.</p>
         </div>
     </div>
 </footer>
@@ -434,10 +474,10 @@
 </div>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/2348045678945" target="_blank" class="whatsapp-floating" title="Message us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/2348045678945" target="_blank" rel="noopener noreferrer" class="whatsapp-floating" aria-label="Message us on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
 </a>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
