@@ -1580,7 +1580,7 @@ img {
     text-align: center;
     margin-bottom: 60px;
     padding: 60px 20px;
-    background: linear-gradient(rgba(26, 26, 46, 0.4), rgba(26, 26, 46, 0.4)), url('/Img/LogoBG-hometown.jpeg');
+    background: linear-gradient(rgba(26, 26, 46, 0.4), rgba(26, 26, 46, 0.4)), url('/LogoBG-hometown.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

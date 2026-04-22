@@ -3,38 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - TechHub</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>About Us - HomeTown TechHub | Leading IT Solutions Provider</title>
+    <meta name="description" content="Learn about HomeTown TechHub - a leading IT solutions provider with 5+ years of experience. Discover our mission, values, and commitment to delivering innovative digital solutions.">
+    <meta name="keywords" content="about HomeTown TechHub, IT company, technology solutions, digital services, business technology, IT consulting">
+    <meta name="author" content="HomeTown TechHub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://techhub.com/about.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techhub.com/about.html">
+    <meta property="og:title" content="About Us - HomeTown TechHub | Leading IT Solutions Provider">
+    <meta property="og:description" content="Learn about HomeTown TechHub - a leading IT solutions provider with 5+ years of experience delivering innovative digital solutions to businesses worldwide.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="HomeTown TechHub">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://techhub.com/about.html">
+    <meta name="twitter:title" content="About Us - HomeTown TechHub | Leading IT Solutions Provider">
+    <meta name="twitter:description" content="Learn about HomeTown TechHub - a leading IT solutions provider with 5+ years of experience delivering innovative digital solutions.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&h=630&fit=crop">
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="Img/favicon-hometown.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" href="Img/favicon-hometown.png">
+
+     <!-- Stylesheets -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="index.css">
+
+     <script src="seo.js" defer></script>
+     <script src="about.js" defer></script>
 </head>
 <body>
 
+<!-- Skip to content link for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- NAVBAR -->
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
         <div class="nav-logo">
-            <img src="Img/Logo-hometown.jpeg" alt="logo">
-            <!-- <i class="fas fa-cube"></i> -->
-            <!-- <span>TechHub</span> -->
+            <a href="index.html" aria-label="HomeTown TechHub Home Page">
+                <img src="Logo-hometown.jpeg" alt="HomeTown TechHub - Hometown Tech Hub Logo" width="180" height="60">
+            </a>
         </div>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item dropdown">
-                <a href="courses.html" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="courses.html#data-analytics">Data Analysis</a></li>
-                    <li><a href="courses.html#web-development">Web Development</a></li>
-                    <li><a href="courses.html#product-design">Product Design</a></li>
-                    <li><a href="courses.html#social-media">Social Media Marketing</a></li>
-                    <li><a href="courses.html#content-writing">Content Writing</a></li>
-                    <li><a href="courses.html#seo">SEO Optimization</a></li>
+        <ul class="nav-menu" role="menubar">
+            <li class="nav-item" role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+            <li class="nav-item" role="none"><a href="about.html" class="nav-link" role="menuitem" aria-current="page">About</a></li>
+            <li class="nav-item dropdown" role="none">
+                <a href="courses.html" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Courses <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a href="courses.html#data-analytics" role="menuitem">Data Analysis</a></li>
+                    <li role="none"><a href="courses.html#web-development" role="menuitem">Web Development</a></li>
+                    <li role="none"><a href="courses.html#product-design" role="menuitem">Product Design</a></li>
+                    <li role="none"><a href="courses.html#social-media" role="menuitem">Social Media Marketing</a></li>
+                    <li role="none"><a href="courses.html#content-writing" role="menuitem">Content Writing</a></li>
+                    <li role="none"><a href="courses.html#seo" role="menuitem">SEO Optimization</a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item" role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
         </ul>
-        <div class="hamburger">
+        <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -43,14 +82,14 @@
 </nav>
 
 <!-- ABOUT PAGE -->
-<section class="about-page">
+<section class="about-page" id="main-content" aria-labelledby="page-title">
     <!-- ABOUT US SECTION -->
-    <section class="about" id="about">
+    <section class="about" id="about" aria-labelledby="about-title">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <p class="section-label section-label-centered">about us</p>
-                    <h3 class="section-title">The Best IT Solution with 5 Years of Experience</h3>
+                    <h3 class="section-title" id="about-title">The Best IT Solution with 5 Years of Experience</h3>
                     <p class="about-description">
                         We provide innovative and reliable IT solutions tailored to meet your business needs. Our team of experienced professionals is dedicated to delivering excellence in every project we undertake. With a proven track record of success...
                     </p>
@@ -78,7 +117,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&h=500&fit=crop" alt="About Us">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&h=500&fit=crop" alt="HomeTown TechHub team of IT professionals collaborating in modern office space" loading="lazy" width="500" height="500">
                 </div>
             </div>
         </div>
@@ -127,31 +166,31 @@
         <h3 class="section-title">We Are Here to Grow Business Exponentially</h3>
         <div class="why-grid">
             <div class="why-card">
-                <div class="why-icon">
+                <div class="why-icon" aria-hidden="true">
                     <i class="fas fa-star"></i>
                 </div>
                 <h3>Best in Industry</h3>
                 <p>We provide top-notch IT solutions with the latest technology and best practices to ensure your business stays ahead of the competition.</p>
             </div>
             <div class="why-image">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=500&fit=crop" alt="Why Choose Us">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=500&fit=crop" alt="Professional team collaborating in modern office environment" loading="lazy" width="400" height="500">
             </div>
             <div class="why-card">
-                <div class="why-icon">
+                <div class="why-icon" aria-hidden="true">
                     <i class="fas fa-rocket"></i>
                 </div>
                 <h3>Innovation First</h3>
                 <p>Our team continuously explores new technologies and methodologies to deliver innovative solutions that drive growth and efficiency.</p>
             </div>
             <div class="why-card">
-                <div class="why-icon">
+                <div class="why-icon" aria-hidden="true">
                     <i class="fas fa-shield-alt"></i>
                 </div>
                 <h3>Reliable Support</h3>
                 <p>With 24/7 dedicated support, we ensure your systems run smoothly and any issues are resolved promptly.</p>
             </div>
             <div class="why-card">
-                <div class="why-icon">
+                <div class="why-icon" aria-hidden="true">
                     <i class="fas fa-dollar-sign"></i>
                 </div>
                 <h3>Cost Effective</h3>
@@ -168,13 +207,13 @@
             <div class="footer-col">
                 <div class="footer-logo">
                     <i class="fas fa-cube"></i>
-                    <span>TechHub</span>
+                    <span>HomeTown TechHub</span>
                 </div>
                 <p>We are a leading IT solutions provider with 5+ years of experience in delivering innovative technologies and exceptional services to businesses worldwide.</p>
                 <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -203,16 +242,16 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 TechHub. All rights reserved.</p>
+            <p>&copy; 2026 HomeTown TechHub. All rights reserved.</p>
         </div>
     </div>
 </footer>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/2348045678945" target="_blank" class="whatsapp-floating" title="Message us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/2348045678945" target="_blank" rel="noopener noreferrer" class="whatsapp-floating" aria-label="Message us on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
 </a>
-<script src="js/about.js"></script>
+<script src="about.js"></script>
 
 </body>
 </html>
